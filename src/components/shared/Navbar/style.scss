@@ -1,0 +1,55 @@
+@import '../../../assets//styles/_variables.scss';
+.navbar {
+    padding: 42px 26px;
+    background-color: $backF8;
+    width: 15vw;
+    color: $base-color;
+    letter-spacing: 0.003em;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+
+    h4{
+        font-weight: 500;
+    }
+
+&__menu{
+    ul{
+        li{
+            display: block;
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            a{
+                display: flex;
+                align-items: center;
+                color: $base-color;
+                &:active{
+                    color: $base-color;
+                }
+            }
+        }
+    }
+}
+}
+
+// Router NavLink Active
+.active {
+    font-weight: 500;
+    color: $base-color
+}
+
+.active::before {
+    content: "";
+    background-color: $link-active;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}

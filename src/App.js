@@ -1,9 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
-import Hesabat from "./view/Hesabat";
-import NotFound from "./view/NotFound";
+import './assets/styles/style.scss'
+import Header from "./components/shared/Header/Header";
+import Navbar from "./components/shared/Navbar/Navbar";
+import NotFound from "./pages/NotFound/NotFound";
+import Institutions from "./pages/Institutions/Institutions";
+import Credentials from "./pages/Credentials/Credentials";
+import Certificate from "./pages/Certificate/Certificate";
+import Report from "./pages/Report/Report";
+import Logout from "./pages/Logout/Logout";
+import Package from "./pages/Package/Package";
 
 function App() {
   return (
@@ -14,12 +19,13 @@ function App() {
         <Navbar />{" "}
         <div className="main-section">
           <Routes>
-            <Route path="/" element={<Hesabat />} />
-            <Route path="/hesabat" element={<Hesabat />} />
-            <Route path="/sertifikat" element={<NotFound />} />
-            <Route path="/paket" element={<NotFound />} />
-            <Route path="/credentials" element={<NotFound />} />
-            <Route path="/logout" element={<NotFound />} />
+            <Route path="/" element={<Report />} />
+            <Route path="/report" element={<Report />} />
+            <Route path="/certificate" element={<Certificate />} />
+            <Route path="/package" element={<Package />} />
+            <Route path="/credentials" element={<Credentials />} />
+            <Route path="/institutions" element={<Institutions />} />
+            <Route path="/logout" element={<Logout />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
