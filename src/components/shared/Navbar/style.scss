@@ -24,7 +24,9 @@
             display: flex;
             align-items: center;
             a{
+padding-left: 18px;
                 display: flex;
+                position: relative;
                 align-items: center;
                 color: $base-color;
                 &:active{
@@ -47,9 +49,11 @@
     background-color: $link-active;
     display: inline-block;
     display: flex;
+    position: absolute;
+    left: 0px;
     align-items: center;
-    margin-right: 10px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
+
 }
