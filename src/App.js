@@ -9,14 +9,16 @@ import Certificate from "./pages/Certificate/Certificate";
 import Report from "./pages/Report/Report";
 import Logout from "./pages/Logout/Logout";
 import Package from "./pages/Package/Package";
+import React from "react";
 
 function App() {
+  const [user,setUser] = React.useState(false);
   return (
     <div className="App">
       <Header />
 
       <div className="main">
-        <Navbar />{" "}
+     <Navbar user={user} /> 
         <div className="main-section">
           <Routes>
             <Route path="/" element={<Report />} />
