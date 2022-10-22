@@ -20,6 +20,7 @@ function App() {
             <Route path="/paket" element={<NotFound />} />
             <Route path="/credentials" element={<NotFound />} />
             <Route path="/logout" element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div>
