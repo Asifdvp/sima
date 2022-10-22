@@ -17,6 +17,7 @@
 
 .navbar h4 {
     font-weight: 500;
+
 }
 
 .navbar .menu ul li {
@@ -37,6 +38,7 @@ a:active {
 
 .active {
     font-weight: 500;
+    color: #1D204F
 }
 
 .active::before {

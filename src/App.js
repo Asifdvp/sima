@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
+import Hesabat from "./view/Hesabat";
 import NotFound from "./view/NotFound";
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
         <Navbar />{" "}
         <div className="main-section">
           <Routes>
-            <Route path="/" element={<NotFound />} />
-            <Route path="/hesabat" element={<NotFound />} />
+            <Route path="/" element={<Hesabat />} />
+            <Route path="/hesabat" element={<Hesabat />} />
             <Route path="/sertifikat" element={<NotFound />} />
             <Route path="/paket" element={<NotFound />} />
             <Route path="/credentials" element={<NotFound />} />
