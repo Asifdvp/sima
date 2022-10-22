@@ -3,7 +3,7 @@
     padding: 42px 26px;
     background-color: $backF8;
     width: 216px;
-    max-width: 216px;
+     max-width: 216px;
     color: $base-color;
     letter-spacing: 0.003em;
     font-size: 15px;
@@ -58,3 +58,7 @@ padding-left: 18px;
     border-radius: 50%;
 
 }
+@media only screen and (max-width: 800px) {
+    .navbar {
+        width: 25%;    }
+  }
