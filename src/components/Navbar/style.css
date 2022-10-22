@@ -30,6 +30,7 @@
 .navbar .menu ul li a {
     display: flex;
     align-items: center;
+    color: #1D204F;
 }
 
 a:active {
